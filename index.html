@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="img-container">
         <img class="img" src="./bg.avif" alt="image">
+        <div class="logo-container">
+            <img src="./target.png" alt="logo" class="logo">
+            <h1 class="logo-title">ODIN</h1>
+        </div>
     </div>
     <div class="form-container">
         <div class="text">
@@ -18,34 +25,40 @@
             </p>
             <p class="par"> You <em>know</em> you want to.</p>
         </div>
-        <h1 class="title">Let's do it!</h1>
         <form action="" class="sign-up-form">
-            <div class="first-name">
-                <label for="name">FIRST NAME</label>
-                <input type="text" name="user_name" id="name">
+            <h2 class="title">Let's do it!</h2>
+            <div class="form-div-wrapper">
+                <div class="form-div">
+                    <label class="label" for="name">FIRST NAME</label>
+                    <input class="input" type="text" name="user_name" id="name">
+                </div>
+                <div class="form-div">
+                    <label class="label" for="surname">LAST NAME</label>
+                    <input class="input" type="text" id="surname" name="user_lastname">
+                </div>
             </div>
-            <div class="last-name">
-                <label for="surname">LAST NAME</label>
-                <input type="text" id="surname" name="user_lastname">
+            <div class="form-div-wrapper">
+                <div class="form-div">
+                    <label class="label" for="email">EMAIL</label>
+                    <input class="input" type="email" id="email" name="user_email">
+                </div>
+                <div class="form-div">
+                    <label class="label" for="phone">PHONE NUMBER</label>
+                    <input class="input" type="tel" id="phone" name="phone_number">
+                </div>
             </div>
-            <div class="email-container">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="user_email">
-            </div>
-            <div class="phone-container">
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone" name="phone_number">
-            </div>
-            <div class="password-create">
-                <label for="pswd">PASSWORD</label>
-                <input type="password" id="pswd" name="password" required>
-            </div>
-            <div class="password-confirm">
-                <label for="pswd-confirm">CONFIRM PASSWORD</label>
-                <input type="password" id="pswd-confirm" name="confirm_password" required>
+            <div class="form-div-wrapper">
+                <div class="form-div">
+                    <label class="label" for="pswd">PASSWORD</label>
+                    <input class="input" type="password" id="pswd" name="password" required>
+                </div>
+                <div class="form-div">
+                    <label class="label" for="pswd-confirm">CONFIRM PASSWORD</label>
+                    <input class="input" type="password" id="pswd-confirm" name="confirm_password" required>
+                </div>
             </div>
         </form>
-        <div class="btn">
+        <div class="btn-container">
             <button class="btn">Create Account</button>
         </div>
         <p class="small-par">Already have an account? <a class="log-in-link" href="#">Log In</a></p>
