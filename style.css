@@ -11,9 +11,129 @@ html{
 body{
     display: flex;
     width: 100%;
+    background-color: #33333314;
+}
+
+.img-container{
+    position: relative;
 }
 
 .img{
-    width: 40vw;
+    width: 30vw;
     height: 100vh;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 178px;
+    width: 30vw;
+    gap: 4px;
+    color: #fff;
+    background: #00000052;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 7vw;
+    height: 15vh;
+}
+
+.logo-title{
+    font-size: max(1rem, calc(16px + 5vw));
+    font-family: "Skranji", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-container{
+    margin-top: 50px;
+}
+
+.text, .sign-up-form, .btn, .small-par{
+    padding-left: 5vw;
+}
+
+.text{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0 60px 0;
+    line-height: 1.5;
+}
+
+.par{
+    font-size: min(2rem, calc(1rem + 0.5vw));
+}
+
+.sign-up-form{
+    padding: 20px 0;
+    padding-left: 5vw;
+    width: max(64vw, 5vw);
+    background-color: #fff;
+}
+
+.title{
+    color: #1c1e23;
+}
+
+.form-div-wrapper{
+    display: flex;
+    margin-top: 20px;
+    gap: min(5vw, 2rem);
+    width: 54vw;
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.label{
+    font-size: 0.8vw;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #333;
+}
+
+.input{
+    appearance: none;
+    height: 2vw;
+    border-radius: 3px;
+    padding: 4px 2px 4px 10px;
+    font-size: 1rem;
+    border: 1px solid #3333336b;
+}
+
+.btn{
+    background-color: #46573e;
+    border: none;
+    border-radius: 5px;
+    margin: 2vw 5vw;
+    padding: 0;
+    width: 17vw;
+    height: 5vh;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 1px 2px 3px #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    transform: scale(1);
+}
+
+.btn:hover{
+    background-color: #46573e34;
+    color: #46573e;
+    transform: scale(1.05);
+}
+
+.log-in-link{
+    color: #46573e;
+    font-weight: bold;
+    text-decoration: none;
 }
