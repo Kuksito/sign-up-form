@@ -16,7 +16,6 @@ body{
 
 .main{
     display: flex;
-    flex-direction: column;
     width: 81vw;
     background: #f5f5f5;
     margin: 0 auto;
