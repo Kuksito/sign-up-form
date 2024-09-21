@@ -19,8 +19,8 @@ body{
 }
 
 .img{
-    width: 30vw;
-    height: 100vh;
+    width: 25vw;
+    height: 99.56vh;
 }
 
 .logo-container{
@@ -29,7 +29,7 @@ body{
     justify-content: center;
     position: absolute;
     top: 178px;
-    width: 30vw;
+    width: 25vw;
     gap: 4px;
     color: #fff;
     background: #00000052;
@@ -48,6 +48,17 @@ body{
     font-style: normal;
 }
 
+.logo-credit{
+    position: absolute;
+    bottom: 20px;
+    left: 67px;
+    font-size: 0.9rem;
+}
+
+.logo-link, .logo-credit{
+    color: #fff;
+}
+
 .form-container{
     margin-top: 50px;
 }
@@ -61,7 +72,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 20px 0 60px 0;
+    margin: 60px 0 70px 0;
     line-height: 1.5;
 }
 
@@ -72,8 +83,9 @@ body{
 .sign-up-form{
     padding: 20px 0;
     padding-left: 5vw;
-    width: max(64vw, 5vw);
+    width: max(70vw, 5vw);
     background-color: #fff;
+    box-shadow: 1px 6px 6px #a7a5a56b;
 }
 
 .title{
@@ -94,7 +106,7 @@ body{
 }
 
 .label{
-    font-size: 0.8vw;
+    font-size: max(0.8vw, 0.8rem);
     font-weight: 600;
     letter-spacing: 0.1rem;
     color: #333;
@@ -107,6 +119,22 @@ body{
     padding: 4px 2px 4px 10px;
     font-size: 1rem;
     border: 1px solid #3333336b;
+}
+
+.input:focus{
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 1px 1px 4px #a7a5a5;
+}
+
+.input:required{
+    border: 1px solid red;
+}
+
+.pswd-one::before{
+    content: "* Password do not match";
+    color: red;
+    font-size: 0.9rem;
 }
 
 .btn{
